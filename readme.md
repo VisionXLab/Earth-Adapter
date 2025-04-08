@@ -4,6 +4,11 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]
+## TODO
+- [ ] complete training and evaluation instruction
+- [ ] paper link
+- [ ] demo.ipynb
+- [ ] ...
 
 ## 📖 Introduction
 
@@ -30,8 +35,15 @@ cd Earth-Adapter
 # Create virtual environment
 conda create -n earth-adapter python=3.9 -y
 
-# Install required packages
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia -y
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.0"
+pip install "mmsegmentation>=1.0.0"
+pip install "mmdet>=3.0.0"
+pip install xformers=='0.0.20'
 pip install -r requirements.txt
+pip install future tensorboard
 ```
 
 ## 📂 Dataset Preparation
