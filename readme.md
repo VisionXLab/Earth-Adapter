@@ -4,8 +4,8 @@
       <a href='https://github.com/xiaoxing2001' style='text-decoration: none' >Xiaoxing Hu</a><sup></sup>&emsp;
       <a href='https://scholar.google.com/citations?user=cWip8QgAAAAJ&hl=zh-CN' style='text-decoration: none' >Ziyang Gong</a><sup></sup>&emsp;  
       <a href='https://scholar.google.com/citations?user=3nMDEBYAAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Yupei Wang</a><sup></sup>&emsp;  
-      <a href='https://scholar.google.com/citations?user=62c9GI0AAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Yuru Jia</a><sup></sup>&emsp;<br/>
-      <a href='[https://scholar.google.com/citations?user=62c9GI0AAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none](https://scholar.google.com/citations?user=EyZqU9gAAAAJ&hl=zh-CN&oi=ao)' >Gen Luo</a><sup></sup>&emsp;
+      <a href='https://scholar.google.com/citations?user=62c9GI0AAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Yuru Jia</a><sup></sup>&emsp;<br>
+      <a href='https://scholar.google.com/citations?user=EyZqU9gAAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Gen Luo</a><sup></sup>&emsp;
       <a href='https://yangxue0827.github.io/' style='text-decoration: none' >Xue Yang</a><sup></sup>&emsp;
       <!-- <h3 align='center'>CVPR 2025</h3> -->
       <div align="center">
