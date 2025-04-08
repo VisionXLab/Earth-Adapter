@@ -10,7 +10,13 @@ model = dict(
     type = 'DACS_encoder_decoder',
     backbone = dict(
         type = 'MOE_Adpter_DinoVisionTransformer',
-        moe_adapter_type = 'earth_adapter'
+        moe_adapter_type = 'earth_adapter',
+        adapter_config = dict(
+            dim = 32,
+            with_token = False,
+            fft_layer = [21,22,23],
+            cutoff_ratio = 0.2
+        ),
     ),
     decode_head = dict(
     num_classes= 6,
@@ -57,5 +63,5 @@ default_hooks = dict(
     sampler_seed=dict(type="DistSamplerSeedHook"),
     visualization=dict(type="SegVisualizationHook"),
 )
-exp_name = 'DA_1_spatial_wo_token_dim_24'
+exp_name = 'DA'
 randomness = dict(seed = 0)

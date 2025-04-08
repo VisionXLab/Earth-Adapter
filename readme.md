@@ -7,7 +7,7 @@ Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain 
 
 ## 📖 Introduction
 
-This repository contains the official implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]. Our method achieves state-of-the-art performance on 8 widely-used cross-domain geospatial datasets.
+This repository contains the official implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]. Our method achieves state-of-the-art performance on 8 widely-used cross-domain geospatial datasets. The code is still under development, and we are currently providing the model, weights, and dataset. The complete training and testing pipelines will be fully released within a week.
 
 Paper: [Paper Link](https://arxiv.org/abs/XXXX.XXXXX)
 
@@ -51,15 +51,16 @@ Earth-Adapter/
 ## 🔥 Usage
 
 ### Training
-Comming Soon.
-<!-- To train the model, run:
 
 ```bash
-python train.py --config configs/config.yaml
-``` -->
+./tools/train.sh
+```
 
 ### Evaluation
-The Checkpoint can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/1vZm9VvSgRmPeXfu-21nudA?pwd=ys74)
+The Checkpoint can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/1vZm9VvSgRmPeXfu-21nudA?pwd=ys74),put the checkpoint in the `checkpoints` folder. Then run:
+```bash
+./tools/test.sh
+```
 <!-- 
 To evaluate the trained model, run:
 

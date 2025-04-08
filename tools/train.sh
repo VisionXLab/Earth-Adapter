@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES=3
+export CUDA_VISIBLE_DEVICES=0
 python tools/train.py\
-    --config configs/DA/dinov2/earth_adapter/u2r.py\
+    --config your_config.py\
     --no_debug

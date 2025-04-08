@@ -14,8 +14,9 @@ model = dict(
         moe_adapter_type = 'earth_adapter',
         adapter_config = dict(
             dim = 32,
-            with_token = True,
-            token_dim = 64,
+            with_token = False,
+            fft_layer = [18,19,20,21,22,23],
+            cutoff_ratio = 0.2
         ),
     
     ),
@@ -64,5 +65,5 @@ default_hooks = dict(
     sampler_seed=dict(type="DistSamplerSeedHook"),
     visualization=dict(type="SegVisualizationHook"),
 )
-exp_name = 'DA_1_spatial_dim_32_token_dim_64'
+exp_name = 'DA'
 randomness = dict(seed = 0)
