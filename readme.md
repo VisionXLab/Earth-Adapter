@@ -8,6 +8,7 @@ Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain 
 - [ ] complete training and evaluation instruction
 - [ ] paper link
 - [ ] demo.ipynb
+- [ ] data and weight on huggingface,google drive
 - [ ] ...
 
 ## 📖 Introduction
