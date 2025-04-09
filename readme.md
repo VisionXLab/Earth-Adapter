@@ -9,7 +9,7 @@
       <a href='https://yangxue0827.github.io/' style='text-decoration: none' >Xue Yang</a><sup></sup>&emsp;
       <!-- <h3 align='center'>CVPR 2025</h3> -->
       <div align="center">
-      <!-- <a href='https://arxiv.org/abs/2501.04440'><img src='https://img.shields.io/badge/arXiv-2501.04440-brown.svg?logo=arxiv&logoColor=white'></a>
+      <!-- <!-- <a href='https://arxiv.org/abs/2501.04440'><img src='https://img.shields.io/badge/arXiv-2501.04440-brown.svg?logo=arxiv&logoColor=white'></a> -->
       <a href='https://github.com/zhasion/RSAR'><img src='https://img.shields.io/badge/Github-page-yellow.svg?logo=Github&logoColor=white'></a>
       <a href='https://drive.google.com/file/d/1v-HXUSmwBQCtrq0MlTOkCaBQ_vbz5_qs/view?usp=sharing'><img src='https://img.shields.io/badge/GoogleDrive-dataset-blue.svg?logo=GoogleDrive&logoColor=white'></a>
       <!-- <a href='https://pan.baidu.com/s/1DVUNBuWrhJRg0H1qhwtfEQ?pwd=rsar'><img src='https://img.shields.io/badge/BaiduNetdisk-dataset-blue.svg?logo=baidu&logoColor=white'></a>
@@ -36,7 +36,7 @@ Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain 
 
 This repository contains the official implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]. Our method achieves state-of-the-art performance on 8 widely-used cross-domain geospatial benchmarks. The code is still under development, and we are currently providing the model, weights, and dataset. The complete training and testing pipelines will be fully released within a week.
 
-Paper: [Paper Link](https://arxiv.org/abs/XXXX.XXXXX)
+Paper: [Paper Link](http://arxiv.org/abs/2504.06220)
 
 ## 🛠️ Requirements
 
