@@ -51,7 +51,7 @@ Paper: [Paper Link](http://arxiv.org/abs/2504.06220)
 
 ```bash
 # Clone the repo
-git clone https://github.com/xiaoxing2001/Earth-Adapter.git
+git clone https://github.com/VisionXLab/Earth-Adapter.git
 cd Earth-Adapter
 
 # Create virtual environment
