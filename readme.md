@@ -25,12 +25,18 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) -->
 
 Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]
+## Notice
+This repository is still being organized and refined. If you encounter any issues while using it, please contact xiaoxinghhh@gmail.com or submit an issue. Thank you for your attention.
+
 ## TODO
 - [x] complete training and evaluation instruction
-- [ ] paper link
+- [x] paper link
+- [ ] training log
 - [ ] demo.ipynb
-- [ ] data and weight on huggingface & google drive
-- [ ] ...
+- [x] data and weight on huggingface & google drive
+- [ ] extended experiment on 
+- [ ] supervised in-domain semantic segmentation
+- [ ] bug fix...
 
 ## 📖 Introduction
 
@@ -71,7 +77,7 @@ pip install future tensorboard
 ## 📂 Dataset Preparation
 
 
-- Download the LoveDA, ISPRS Potsdam, ISPRS Vaihingen at the |[Baidu Cloud](https://pan.baidu.com/s/1WGoVqLuJTJXc2AVDyBxXYQ?pwd=s6rk)|[Hugging Face](https://huggingface.co/datasets/wsdwJohn1231/Geo_dataset)|[Google Drive]()|
+- Download the LoveDA, ISPRS Potsdam, ISPRS Vaihingen at the |[Baidu Cloud](https://pan.baidu.com/s/1WGoVqLuJTJXc2AVDyBxXYQ?pwd=s6rk)|[Hugging Face](https://huggingface.co/datasets/wsdwJohn1231/Geo_dataset)|[Google Drive](https://drive.google.com/drive/folders/1mybm0u8TWV25xG4b0nN-ehIMse84j9XK?usp=sharing)| (We have processed the images and labels, dividing them into 512x512 patches. You may also perform the same processing on your own dataset.)
 - Construct the data as follows:
 
 ```bash
@@ -91,7 +97,7 @@ Earth-Adapter/
 ```
 
 ### Evaluation
-The Checkpoint can be downloaded from |[Baidu Cloud](https://pan.baidu.com/s/1vZm9VvSgRmPeXfu-21nudA?pwd=ys74)|[Hugging Face](https://huggingface.co/wsdwJohn1231/Earth-Adapter)|[Google Drive]()|,put the checkpoint in the `checkpoints` folder. Then run:
+The Checkpoint can be downloaded from |[Baidu Cloud](https://pan.baidu.com/s/1vZm9VvSgRmPeXfu-21nudA?pwd=ys74)|[Hugging Face](https://huggingface.co/wsdwJohn1231/Earth-Adapter)|[Google Drive](https://drive.google.com/drive/folders/1UnOOYtGV6jJi39TSnzsPowZK5z-CdZ8K?usp=sharing)|,put the checkpoint in the `checkpoints` folder. Then run:
 ```bash
 ./tools/test.sh
 ```
@@ -124,19 +130,17 @@ python demo.py --input path/to/image.jpg --output path/to/output.jpg
 Example predictions:
 
 ![Sample Result](assets/sample_result.png)
-
+--> 
 ## 📜 Citation
 
 If you find our work helpful, please cite our paper:
 
 ```bibtex
-@article{yourpaper2025,
-  title={Your Paper Title},
-  author={Author1 and Author2 and Others},
-  journal={Conference/Journal},
-  year={2025},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+@article{hu2025earth,
+  title={Earth-Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation},
+  author={Hu, Xiaoxing and Gong, Ziyang and Wang, Yupei and Jia, Yuru and Luo, Gen and Yang, Xue},
+  journal={arXiv preprint arXiv:2504.06220},
+  year={2025}
 }
 ```
 
@@ -146,4 +150,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙌 Acknowledgments
 
-We thank [Project/Library Name] for their contributions to our work. This work was supported by [Funding Source]. -->
+Our work is inspired by [Rein](https://github.com/w1oves/Rein). We are grateful for their outstanding work and code.
