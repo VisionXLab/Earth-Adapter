@@ -26,7 +26,7 @@
 
 Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]
 ## TODO
-- [ ] complete training and evaluation instruction
+- [x] complete training and evaluation instruction
 - [ ] paper link
 - [ ] demo.ipynb
 - [ ] data and weight on huggingface & google drive
