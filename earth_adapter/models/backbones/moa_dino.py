@@ -1,5 +1,4 @@
 from mmseg.models.builder import BACKBONES, MODELS
-from .reins import Reins
 from .dino_v2 import DinoVisionTransformer
 from .utils import set_requires_grad, set_train
 from .earth_adapter import earth_adapter
@@ -10,7 +9,7 @@ moe_adapter = {
 class MOE_Adpter_DinoVisionTransformer(DinoVisionTransformer):
     def __init__(
         self,
-        moe_adapter_type=None,
+        moe_adapter_type = None,
         adapter_config = {},
         **kwargs,
     ):
@@ -34,16 +33,15 @@ class MOE_Adpter_DinoVisionTransformer(DinoVisionTransformer):
                     x[:, 1:, :].permute(0, 2, 1).reshape(B, -1, H, W).contiguous()
                 )
         return outs
-
     def train(self, mode: bool = True):
         if not mode:
             return super().train(mode)#评估模式
         set_requires_grad(self, ["refine_feat"])
         set_train(self, ["refine_feat"])
-
     def state_dict(self, destination, prefix, keep_vars):
         state = super().state_dict(destination, prefix, keep_vars)
         keys = [k for k in state.keys() if "refine_feat" not in k]
+        # keys.extend[[k for k in state.keys() if "a_ema_model" in k]]
         for key in keys:
             state.pop(key)
             if key in destination:

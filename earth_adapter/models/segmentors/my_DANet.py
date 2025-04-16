@@ -15,7 +15,7 @@ from torch import Tensor
 from mmseg.registry import MODELS
 from mmseg.utils import (ConfigType, OptConfigType, OptMultiConfig,
                          OptSampleList, SampleList, add_prefix)
-from mmseg.models.segmentors.base import BaseSegmentor
+from .custom_BaseSegmentor import custom_BaseSegmentor
 from typing import Iterable
 def detach_everything(everything):
     if isinstance(everything, Tensor):
@@ -25,10 +25,8 @@ def detach_everything(everything):
     else:
         return everything
 
-
-
 @MODELS.register_module()
-class DACS_encoder_decoder(BaseSegmentor):
+class DACS_encoder_decoder(custom_BaseSegmentor):
 
     def __init__(self,**cfg):
         super().__init__(
@@ -50,8 +48,8 @@ class DACS_encoder_decoder(BaseSegmentor):
         '''
         ema_cfg = cfg.copy()
         ema_cfg['type'] = 'EncoderDecoder'
-        self.ema_model = MODELS.build(ema_cfg)
-        for name,param in self.ema_model.named_parameters():
+        self.a_ema_model = MODELS.build(ema_cfg)
+        for name,param in self.a_ema_model.named_parameters():
             param.requires_grad = False
     def _init_auxiliary_head(self, auxiliary_head: ConfigType) -> None:
         """Initialize ``auxiliary_head``"""
@@ -172,15 +170,6 @@ class DACS_encoder_decoder(BaseSegmentor):
         for i in range(bs):
             mix_data['data_samples'][i].gt_sem_seg.data = mix_ann[i].unsqueeze(0)
         return mix_data
-    # forzen backbone
-    # def extract_feat(self, inputs: Tensor) -> List[Tensor]:
-    #     """Extract features from images."""
-    #     with torch.no_grad():
-    #         x = self.backbone(inputs)
-    #         x = detach_everything(x)
-    #     if self.with_neck:
-    #         x = self.neck(x)
-    #     return x
     def extract_feat(self, inputs: Tensor) -> List[Tensor]:
         """Extract features from images."""
         x = self.backbone(inputs)#4,3,512,512->[[4,1024,128,128],[4,1024,64,64],[4,1024,32,32],[4,1024,16,16]]

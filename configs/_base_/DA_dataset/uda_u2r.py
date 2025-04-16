@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'LoveDADataset'
-data_root = 'data'
+data_root = '/data/xiaoxinghhh/dataset/remote_sensing_new'
 
 train_pipeline = [
     dict(type='LoadImageFromFile'),

@@ -110,5 +110,4 @@ class earth_adapter(nn.Module):
             feats = torch.cat([cls_token, feats], dim=0)
         if batch_first:
             feats = feats.permute(1, 0, 2)
-        
         return feats

@@ -1,11 +1,8 @@
-# dataset config
 _base_ = [
     "../../../_base_/DA_dataset/uda_vi2pr.py",
     "../../../_base_/default_runtime.py",
     "../../../_base_/models/dinov2_mask2former.py"
 ]
-
-
 model = dict(
     type = 'DACS_encoder_decoder',
     backbone = dict(
@@ -25,10 +22,9 @@ model = dict(
         )
     )
 )
-
-# AdamW optimizer, no weight decay for position embedding & layer norm
-# in backbone
+runner_type = 'custom_runner'
 embed_multi = dict(lr_mult=1.0, decay_mult=0.0)
+#TODO:
 optim_wrapper = dict(
     constructor="PEFTOptimWrapperConstructor",
     optimizer=dict(
@@ -48,9 +44,7 @@ optim_wrapper = dict(
 param_scheduler = [
     dict(type="PolyLR", eta_min=0, power=0.9, begin=0, end=20000, by_epoch=False)
 ]
-
-# training schedule for 160k
-train_cfg = dict(type="IterBasedTrainLoop", max_iters=20000, val_interval=2000)
+train_cfg = dict(type="my_iter_loop", max_iters=20000, val_interval=2000)
 val_cfg = dict(type="ValLoop")
 test_cfg = dict(type="TestLoop")
 default_hooks = dict(
@@ -61,7 +55,7 @@ default_hooks = dict(
         type="CheckpointHook", by_epoch=False, interval=2000, max_keep_ckpts=1, save_best='mIoU'
     ),
     sampler_seed=dict(type="DistSamplerSeedHook"),
-    visualization=dict(type="SegVisualizationHook"),
+    visualization=dict(type="SegVisualizationHook",interval=1),
 )
 exp_name = 'DA'
 randomness = dict(seed = 0)

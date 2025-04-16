@@ -1,8 +1,7 @@
 # dataset settings
 # domain generalization
 dataset_type = 'LoveDADataset'
-data_root = 'data'
-# crop_size = (512, 512)
+data_root = '/data/xiaoxinghhh/dataset/remote_sensing_new'
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', reduce_zero_label=True),
