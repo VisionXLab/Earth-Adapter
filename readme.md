@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation</h1>
+  <h1 align="center">Earth-Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation</h1>
   <p align="center">
       <a href='https://github.com/xiaoxing2001' style='text-decoration: none' >Xiaoxing Hu</a><sup></sup>&emsp;
       <a href='https://scholar.google.com/citations?user=cWip8QgAAAAJ&hl=zh-CN' style='text-decoration: none' >Ziyang Gong</a><sup></sup>&emsp;  
@@ -31,11 +31,10 @@ This repository is still being organized and refined. If you encounter any issue
 ## TODO
 - [x] complete training and evaluation instruction
 - [x] paper link
-- [ ] training log
 - [ ] demo.ipynb
 - [x] data and weight on huggingface & google drive
-- [ ] extended experiment on 
-- [ ] supervised in-domain semantic segmentation
+- [ ] extended experiment on supervised in-domain semantic segmentation
+- [ ] extended experiment on cross-earth benchmark
 - [ ] bug fix...
 
 ## 📖 Introduction
