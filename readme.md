@@ -125,14 +125,15 @@ python demo.py --input path/to/image.jpg --output path/to/output.jpg
 
 ### Main Results
 ![Sample Result](assets/main_result.png)
-### Quantitative Results
 ![Sample Result](assets/IoU_result.png)
-<div style="display: flex; justify-content: space-between;">
-    <img src="assets/ab_1.png" width="49%" alt="Ablation1"/>
-    <img src="assets/ab_2.png" width="49%" alt="Ablation2"/>
-</div>
+### Quantitative Results
+![Sample Result](assets/trade-off.png)
+![Sample Result](assets/ab_1.png)
 
-### Qualitative Results
+### Visualization
+![Sample Result](assets/vis1.png)
+![Sample Result](assets/vis2.png)
+
 
 ## 📜 Citation
 
