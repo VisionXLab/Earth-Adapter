@@ -25,6 +25,12 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) -->
 
 Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]
+
+<div align="center">
+  <img src="assets/Earth-Adapter.png" width="100%"/>
+</div>
+
+
 ## Notice
 This repository is still being organized and refined. If you encounter any issues while using it, please contact xiaoxinghhh@gmail.com or submit an issue. Thank you for your attention.
 
