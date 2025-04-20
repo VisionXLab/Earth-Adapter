@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Earth-Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation</h1>
   <p align="center">
-      <a href='https://github.com/xiaoxing2001' style='text-decoration: none' >Xiaoxing Hu</a><sup></sup>&emsp;
+      <a href='https://scholar.google.com.hk/citations?user=zBM8_XkAAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Xiaoxing Hu</a><sup></sup>&emsp;
       <a href='https://scholar.google.com/citations?user=cWip8QgAAAAJ&hl=zh-CN' style='text-decoration: none' >Ziyang Gong</a><sup></sup>&emsp;  
       <a href='https://scholar.google.com/citations?user=3nMDEBYAAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Yupei Wang</a><sup></sup>&emsp;  
       <a href='https://scholar.google.com/citations?user=62c9GI0AAAAJ&hl=zh-CN&oi=ao' style='text-decoration: none' >Yuru Jia</a><sup></sup>&emsp;<br>
