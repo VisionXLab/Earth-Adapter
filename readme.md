@@ -120,22 +120,20 @@ To run inference on a single image:
 ```bash
 python demo.py --input path/to/image.jpg --output path/to/output.jpg
 ```
-
+--> 
 ## 📊 Results
 
+### Main Results
+![Sample Result](assets/main_result.png)
 ### Quantitative Results
-
-| Method        | Dataset | Accuracy | mIoU |
-|--------------|--------|----------|------|
-| Our Method   | XYZ    | XX.X%    | XX.X% |
-| Baseline     | XYZ    | XX.X%    | XX.X% |
+![Sample Result](assets/IoU_result.png)
+<div style="display: flex; justify-content: space-between;">
+    <img src="assets/ab_1.png" width="50%" alt="Ablation1"/>
+    <img src="assets/ab_2.png" width="50%" alt="Ablation2"/>
+</div>
 
 ### Qualitative Results
 
-Example predictions:
-
-![Sample Result](assets/sample_result.png)
---> 
 ## 📜 Citation
 
 If you find our work helpful, please cite our paper:
