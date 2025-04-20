@@ -32,7 +32,7 @@ Official PyTorch implementation of [Earth Adapter: Bridge the Geospatial Domain 
 
 
 ## Notice
-This repository is still being organized and refined. If you encounter any issues while using it, please contact xiaoxinghhh@gmail.com or submit an issue. Thank you for your attention.
+This repository is still being organized and refined. If you encounter any issues while using it, please contact |Email: xiaoxinghhh@gmail.com|WeChat: 15717699268| or submit an issue. Thank you for your attention.
 
 ## TODO
 - [x] complete training and evaluation instruction
