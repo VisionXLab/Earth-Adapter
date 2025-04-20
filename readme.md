@@ -141,6 +141,12 @@ If you find our work helpful, please cite our paper:
   journal={arXiv preprint arXiv:2504.06220},
   year={2025}
 }
+@article{gong2024crossearth,
+  title={Crossearth: Geospatial vision foundation model for domain generalizable remote sensing semantic segmentation},
+  author={Gong, Ziyang and Wei, Zhixiang and Wang, Di and Ma, Xianzheng and Chen, Hongruixuan and Jia, Yuru and Deng, Yupeng and Ji, Zhenming and Zhu, Xiangwei and Yokoya, Naoto and others},
+  journal={arXiv preprint arXiv:2410.22629},
+  year={2024}
+}
 ```
 
 ## 📝 License
