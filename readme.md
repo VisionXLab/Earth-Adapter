@@ -128,8 +128,8 @@ python demo.py --input path/to/image.jpg --output path/to/output.jpg
 ### Quantitative Results
 ![Sample Result](assets/IoU_result.png)
 <div style="display: flex; justify-content: space-between;">
-    <img src="assets/ab_1.png" width="50%" alt="Ablation1"/>
-    <img src="assets/ab_2.png" width="50%" alt="Ablation2"/>
+    <img src="assets/ab_1.png" width="49%" alt="Ablation1"/>
+    <img src="assets/ab_2.png" width="49%" alt="Ablation2"/>
 </div>
 
 ### Qualitative Results
