@@ -39,7 +39,7 @@ This repository is still being organized and refined. If you encounter any issue
 
 ## 📖 Introduction
 
-This repository contains the official implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]. Our method achieves state-of-the-art performance on 8 widely-used cross-domain geospatial benchmarks. The code is still under development, and we are currently providing the model, weights, and dataset. The complete training and testing pipelines will be fully released within a week.
+This repository contains the official implementation of [Earth Adapter: Bridge the Geospatial Domain Gaps with Mixture of Frequency Adaptation]. Our method achieves state-of-the-art performance on 8 widely-used cross-domain geospatial benchmarks. The code is still under development, and we are currently providing the model, weights, and dataset.
 
 Paper: [Paper Link](http://arxiv.org/abs/2504.06220)
 
