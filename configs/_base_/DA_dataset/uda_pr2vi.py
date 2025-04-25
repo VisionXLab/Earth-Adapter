@@ -1,7 +1,7 @@
 
 # dataset settings
 dataset_type = 'ISPRSDataset'
-data_root = '/data/xiaoxinghhh/dataset/remote_sensing_new'
+data_root = 'data'#or absolute path
 
 train_pipeline = [
     dict(type='LoadImageFromFile'),

@@ -71,7 +71,8 @@ conda create -n earth-adapter python=3.9 -y
 conda activate earth-adapter
 
 # Install PyTorch according to your own CUDA version
-conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia -y
+pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
+
 
 # Install other dependencies
 pip install -U openmim
@@ -79,7 +80,7 @@ mim install mmengine
 mim install "mmcv>=2.0.0"
 pip install "mmsegmentation>=1.0.0"
 pip install "mmdet>=3.0.0"
-pip install xformers=='0.0.20'
+pip install xformers=='0.0.23'
 pip install -r requirements.txt
 pip install future tensorboard
 ```
@@ -101,7 +102,7 @@ Earth-Adapter/
 ## 🔥 Usage
 
 ### Training
-
+- Down the `dinov2_converted.pth` model from |[Baidu Cloud](https://pan.baidu.com/s/1vZm9VvSgRmPeXfu-21nudA?pwd=ys74)|[Hugging Face](https://huggingface.co/wsdwJohn1231/Earth-Adapter)|[Google Drive](https://drive.google.com/drive/folders/1UnOOYtGV6jJi39TSnzsPowZK5z-CdZ8K?usp=sharing)|,put the `dinov2_converted.pth` in the `checkpoints` folder.
 ```bash
 ./tools/train.sh
 ```

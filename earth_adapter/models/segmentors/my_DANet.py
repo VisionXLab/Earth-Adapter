@@ -48,8 +48,8 @@ class DACS_encoder_decoder(custom_BaseSegmentor):
         '''
         ema_cfg = cfg.copy()
         ema_cfg['type'] = 'EncoderDecoder'
-        self.a_ema_model = MODELS.build(ema_cfg)
-        for name,param in self.a_ema_model.named_parameters():
+        self.ema_model = MODELS.build(ema_cfg)
+        for name,param in self.ema_model.named_parameters():
             param.requires_grad = False
     def _init_auxiliary_head(self, auxiliary_head: ConfigType) -> None:
         """Initialize ``auxiliary_head``"""
