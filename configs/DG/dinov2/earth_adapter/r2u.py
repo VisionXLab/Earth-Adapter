@@ -22,7 +22,6 @@ model = dict(
         )
     )
 )
-runner_type = 'custom_runner'
 embed_multi = dict(lr_mult=1.0, decay_mult=0.0)
 #TODO:
 optim_wrapper = dict(
@@ -44,7 +43,7 @@ optim_wrapper = dict(
 param_scheduler = [
     dict(type="PolyLR", eta_min=0, power=0.9, begin=0, end=20000, by_epoch=False)
 ]
-train_cfg = dict(type="my_iter_loop", max_iters=20000, val_interval=2000)
+train_cfg = dict(type="IterBasedTrainLoop", max_iters=20000, val_interval=2000)
 val_cfg = dict(type="ValLoop")
 test_cfg = dict(type="TestLoop")
 default_hooks = dict(

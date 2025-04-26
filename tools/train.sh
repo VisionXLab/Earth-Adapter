@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=3
 python tools/train.py\
-    --config configs/DA/dinov2/earth_adapter/pr2vi.py\
+    --config configs/SS/dinov2/earth_adapter/potsdam.py\
     --no_debug
