@@ -100,7 +100,7 @@ Earth-Adapter/
 ```
 
 ## 🔥 Usage
-
+- If you encounter a version mismatch of mmseg or mmdet during use, such as an error such as ``xxx<=mmcv<xxx``, please modify it directly in ``__init__.py``(in mmseg and mmdet) and change it to ``xxx<=mmcv<=xxx``.
 ### Training
 - Down the `dinov2_converted.pth` model from |[Baidu Cloud](https://pan.baidu.com/s/1vZm9VvSgRmPeXfu-21nudA?pwd=ys74)|[Hugging Face](https://huggingface.co/wsdwJohn1231/Earth-Adapter)|[Google Drive](https://drive.google.com/drive/folders/1UnOOYtGV6jJi39TSnzsPowZK5z-CdZ8K?usp=sharing)|,put the `dinov2_converted.pth` in the `checkpoints` folder.
 ```bash
