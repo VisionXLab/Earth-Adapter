@@ -2,5 +2,5 @@
 
 export CUDA_VISIBLE_DEVICES=0
 python tools/train.py\
-    --config your_config.py\
+    --config configs/SS/dinov2/earth_adapter/vaihingen.py\
     --no_debug
