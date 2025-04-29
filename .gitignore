@@ -6,5 +6,3 @@ data/
 checkpoints/
 work_dirs/
 check_point/
-configs/SS/
-configs/_base_/SS_dataset
