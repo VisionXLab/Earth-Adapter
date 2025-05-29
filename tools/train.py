@@ -109,8 +109,6 @@ def main():
         # build customized runner from the registry
         # if 'runner_type' is set in the cfg
         runner = RUNNERS.build(cfg)
-    # debug:
-    runner.save_checkpoint(runner.work_dir, 'latest.pth')
     # start training
     runner.train()
 
