@@ -128,7 +128,7 @@ class custom_runner(Runner):
                      lambda x: hasattr(x, 'cpu'), lambda x: x.cpu()),
         }
         state_dict = checkpoint['state_dict']
-        state_dict = {k: v for k, v in state_dict.items() if 'ema_model' not in k}
+        state_dict = {k: v for k, v in state_dict.items() if ('backbone.refine_feat' in k or 'decode_head' in k) and 'ema_model' not in k}
         checkpoint['state_dict'] = state_dict
         # save optimizer state dict to checkpoint
         if save_optimizer:

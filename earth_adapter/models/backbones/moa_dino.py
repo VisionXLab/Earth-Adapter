@@ -38,12 +38,12 @@ class MOE_Adpter_DinoVisionTransformer(DinoVisionTransformer):
             return super().train(mode)#评估模式
         set_requires_grad(self, ["refine_feat"])
         set_train(self, ["refine_feat"])
-    def state_dict(self, destination, prefix, keep_vars):
-        state = super().state_dict(destination, prefix, keep_vars)
-        keys = [k for k in state.keys() if "refine_feat" not in k]
-        # keys.extend[[k for k in state.keys() if "a_ema_model" in k]]
-        for key in keys:
-            state.pop(key)
-            if key in destination:
-                destination.pop(key)
-        return state
+    # def state_dict(self, destination, prefix, keep_vars):
+    #     state = super().state_dict(destination, prefix, keep_vars)
+    #     keys = [k for k in state.keys() if "refine_feat" not in k]
+    #     # keys.extend[[k for k in state.keys() if "a_ema_model" in k]]
+    #     for key in keys:
+    #         state.pop(key)
+    #         if key in destination:
+    #             destination.pop(key)
+    #     return state

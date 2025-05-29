@@ -17,7 +17,7 @@ from mmseg.registry import RUNNERS
 import uuid
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
-    parser.add_argument('--config',default= 'configs/DG/dinov2/earth_adapter/pr2vi.py', help='train config file path')
+    parser.add_argument('--config',default= 'configs/DA/dinov2/earth_adapter/pr2vi.py', help='train config file path')
     parser.add_argument('--work-dir', help='the dir to save logs and models')
     parser.add_argument(
         '--resume',
@@ -109,7 +109,8 @@ def main():
         # build customized runner from the registry
         # if 'runner_type' is set in the cfg
         runner = RUNNERS.build(cfg)
-
+    # debug:
+    runner.save_checkpoint(runner.work_dir, 'latest.pth')
     # start training
     runner.train()
 
