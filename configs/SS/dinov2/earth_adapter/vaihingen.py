@@ -8,8 +8,9 @@ model = dict(
         type = 'MOE_Adpter_DinoVisionTransformer',
         moe_adapter_type = 'earth_adapter',
         adapter_config = dict(
-            dim = 16,
+            dim = 32,
             with_token = False,
+            fft_layer = [18,19,20,21,22,23]
         ),
     ),
     decode_head = dict(

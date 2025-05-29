@@ -8,14 +8,16 @@ model = dict(
         type = 'MOE_Adpter_DinoVisionTransformer',
         moe_adapter_type = 'earth_adapter',
         adapter_config = dict(
-            dim = 16,
+            dim = 64,
             with_token = False,
+            fft_layer = [0,1,2,3,4,5],
+            cutoff_ratio = 0.2
         ),
     ),
     decode_head = dict(
-    num_classes= 6,
+    num_classes= 16,
     loss_cls = dict(
-        class_weight = [1.0]*6+[0.1],
+        class_weight = [1.0]*16+[0.1],
         )
     )
 )

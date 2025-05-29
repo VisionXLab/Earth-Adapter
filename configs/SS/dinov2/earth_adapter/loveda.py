@@ -10,12 +10,14 @@ model = dict(
         adapter_config = dict(
             dim = 16,
             with_token = False,
+            fft_layer = [0,1,2],
+            cutoff_ratio = 0.2
         ),
     ),
     decode_head = dict(
-    num_classes= 6,
+    num_classes= 7,
     loss_cls = dict(
-        class_weight = [1.0]*6+[0.1],
+        class_weight = [1.0]*7+[0.1],
         )
     )
 )
