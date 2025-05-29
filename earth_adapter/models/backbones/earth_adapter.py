@@ -33,8 +33,6 @@ class earth_adapter(nn.Module):
                 3 * reduce(mul, (16, 16), 1) + 1024
             )
         )
-        self.layer_norm = nn.ModuleList([nn.LayerNorm(1024) for _ in range(24)])
-
         if self.with_token:
             self.mlp_list1 = nn.ModuleList([nn.Sequential(nn.Linear(1024+self.token_dim, self.dim), nn.ReLU(), nn.Linear(self.dim, 1024)) for _ in range(24)])
         else:
@@ -105,7 +103,6 @@ class earth_adapter(nn.Module):
                          router_weights[:,:, 1].unsqueeze(-1) * delta_feat2 + \
                          router_weights[:,:, 2].unsqueeze(-1) * delta_feat3
             feats = feats + self.scale[layer] * delta_feat
-        
         if has_cls_token:
             feats = torch.cat([cls_token, feats], dim=0)
         if batch_first:
